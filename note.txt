@@ -1,0 +1,12 @@
+Home page:
+	du lịch việt nam -> dropdown
+	ấn gửi yêu cầu -> tao
+	click tất cả tour -> page ấn tượng việt nam
+	Tell story: suy nghĩ về việc click vào ảnh hiển thị banner hay sang trang mới\
+
+
+Ưu tiên:
+	home page
+	du lịch VN
+	tạo tour
+	mice tour

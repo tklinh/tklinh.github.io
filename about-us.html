@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- slide -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./src/main.css">
+    <link rel="stylesheet" href="./src/sub-page.css">
+    <link rel="stylesheet" href="./src/offcanvas.css">
+</head>
+
+<body class="p-0">
+    <section class="header">
+        <nav class="navbar navbar-expand-md fixed-top navbar-light bg-light px-4">
+            <a class="navbar-brand" href="index.html"><img src="./images/dong-tay-bac/Logo.svg" alt=""></a>
+            <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav m-auto">
+                    <li class="nav-item px-2">
+                        <a class="nav-link" href="about-us.html">Về vitrip.me <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown px-2">
+                        <a class="nav-link dropdown-toggle" href="du-lich-viet-nam.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Du lịch Việt Nam
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="dong-tay-bac.html">Đông Tây Bắc</a>
+                            <a class="dropdown-item" href="bien-dao.html">Biển Đảo</a>
+                            <a class="dropdown-item" href="tay-nguyen.html">Tây Nguyên</a>
+                            <a class="dropdown-item" href="mien-tay.html">Miền Tây</a>
+                        </div>
+                    </li>
+                    <li class="nav-item  px-2">
+                        <a class="nav-link" href="mice-tour.html">Mice Tour</a>
+                    </li>
+                    <li class="nav-item  px-2">
+                        <a class="nav-link" href="tra-cuu-booking.html">Tra cứu Booking</a>
+                    </li>
+                    <li class="nav-item  px-2">
+                        <a class="nav-link" href="tin-tuc.html">Tin tức</a>
+                    </li>
+                    <li class="nav-item  px-2">
+                        <a class="nav-link" href="lien-he.html">Liên hệ</a>
+                    </li>
+                </ul>
+                <div>
+                    <img src="./images/dong-tay-bac/Language.svg" alt="">
+                    <div class="btn-login">
+                        <a href=""><img src="./images/home/line.png" alt=""></a>
+                        <a href="" type="button" data-toggle="modal" data-target=".bd-example-modal-lg"><img src="./images/home/account-circle.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="modal fade bd-example-modal-lg index-login-modal" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="row bg-white">
+                        <div class="col-md pl-0 pr-0">
+                            <img src="./images/home/login-img.jpg" alt="" class="w-full">
+                        </div>
+                        <div class="col-md p-4">
+                            <div class="text-center">
+                                <img src="./images/dong-tay-bac/Logo.svg" alt="">
+                                <h4 class="my-4">Chào mừng đến với Vitrip.me</h4>
+                                <p>Vui lòng điền thông tin đăng nhập</p>
+                            </div>
+                            <form action="" class="my-5">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Tên đăng nhập hoặc email" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Mật khẩu" required>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                        <label class="form-check-label" for="exampleCheck1">Lưu lại</label>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary bg-blue-800">Đăng nhập</button>
+                                </div>
+                            </form>
+                            <div class="text-center">
+                                <a href="#">Đổi mật khẩu |</a>
+                                <a href="#">Lấy lại mật khẩu</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="./src/offcanvas.js"></script>
+
+
+        <div class="banner-about-us d-flex align-items-center">
+            <div class="container">
+                <h2 class="text-white d-flex justify-content-center font-weight-bold text-center font-40 text-uppercase pb-4">Về Vitrip.me</h2>
+                <!-- <p class="text-white text-center">Du lịch Tây Nguyên nổi bật lên với hình ảnh của Cao nguyên hùng vĩ, với núi rừng đại ngàn. Điểm đến của tour du lịch Tây Nguyên là những bản làng của người dân tộc thiểu số với nhà sàn và rượu cần, tìm hiểu về nét văn hóa người Đồng bào Ê Đê, nghe những điệu nhạc Cồng chiêng để hiểu hết về vẻ đẹp vùng đất và con người nơi đây. Với nhiều điểm tham quan thú vị và hấp dẫn, tour Tây Nguyên hứa hẹn sẽ là sự lựa chọn độc đáo cho hành trình du lịch nghỉ dưỡng của du khách. Để lựa chọn cho mình một tour du lịch Tây Nguyên phù hợp với thời gian và lịch trình, du khách hãy liên hệ đăng ký tour trực tuyến tại Website Vitrip.me để mua được tour với giá tốt nhất. Tour Du lịch Tây Nguyên được khởi hành vào các ngày trong tuần, xuất phát cả từ Hà Nội và TP.HCM.</p> -->
+            </div>
+        </div>
+    </section>
+    <!-- end header -->
+    <main class="container py-5">
+        <nav aria-label="breadcrumb ">
+            <ol class="breadcrumb bg-light pl-0 mb-0">
+                <li class="breadcrumb-item"><a href="index.html">Trang chủ </a></li>
+                <li class="breadcrumb-item active" aria-current="page">Về Vitrip.me</li>
+            </ol>
+        </nav>
+        <section class="thu-ngo">
+            <div class="row">
+                <div class="col-md-7">
+                    <p>Kính thưa Quý Khách hàng,</p>
+                    <p>Công ty Cổ Phần Dịch Vụ Truyền Thông và Du Lịch VITRIP xin gửi tới Quý Khách hàng lời chào trân trọng nhất. Kính chúc Quý Khách và Gia Đình thật nhiều sức khỏe, thành công và hạnh phúc.</p>
+                    <p>Ban Hội Đồng Quản Trị Công ty VITRIP được thành lập với những thành viên có bề dầy hoạt động trong lĩnh vực du lịch – lữ hành trong nước cũng như quốc tế. Luôn sát cánh cùng mọi nhu cầu của khách hàng. Công ty chúng tôi cam kết đáp ứng tốt nhất những dịch vụ mà Quý Khách hàng yêu cầu, đặc biệt giá cả hợp lý và có tính cạnh tranh cao trên thị trường. Các sản phẩm dịch vụ của công ty bao gồm:</p>
+                    <p>
+                        Cung cấp các tour du lịch trong nước và ngoài nước. <br>
+                        Dịch vụ tư vấn, đặt vé máy bay, khách sạn, xe vận chuyển toàn quốc. <br>
+                        Tư vấn, tổ chức các hoạt động, sự kiện trong và ngoài trời: tiệc sinh nhật, lễ kỷ niệm, team building, gala dinner… <br>
+                        Quý Khách hàng quan tâm tới dịch vụ của công ty hoặc muốn biết thêm chi tiết xin vui lòng liên hệ trực tiếp phòng kinh doanh qua hotline: +84 97 302 5588 hoặc email: info@vitrip.me
+                    </p>
+                    <p>Chân thành cảm ơn Quý Khách hàng!</p>
+                    <p>Trân trọng,</p>
+                    <p>Giám Đốc</p>
+                    <img src="./images/about-us/sign.svg" class="img-fluid" alt="">
+                </div>
+                <div class="col-md-5"></div>
+            </div>
+        </section>
+        <section class="about-us-testimonial py-5 text-center">
+            <div class="row">
+                <div class="col-md-3 text-right"><img src="./images/about-us/testimonial1.svg" alt=""></div>
+                <div class="col-md-6">
+                    <p>
+                        Được thành lập và vận hành bởi những người trẻ, năng động, luôn tìm tòi những xu hướng du lịch mới và không ngừng nâng cao chất lượng dịch vụ nhằm mang lại cho khách hàng sự hài lòng và những trải nghiệm lý thú trong mỗi chuyến đi. "Tiên Phong" là kim chỉ nam cho mọi hoạt động của Vitrip.me. Đó cũng là lý do vì sao Vitrip chọn hình chim hạc làm logo để biểu trưng cho tính cách của mình. Chúng tôi luôn tìm tòi những địa điểm du lịch hoàn toàn mới mẻ; cũng như xây dựng các dịch vụ giá trị gia tăng độc đáo, hấp dẫn.
+                    </p>
+                </div>
+                <div class="col-md-3 text-left d-flex flex-wrap align-items-end"><img src="./images/about-us/testimonial2.svg" alt=""></div>
+            </div>
+        </section>
+
+        <section>
+            <div class="row">
+                
+                <div class="col-md-3 su-menh">
+                    <div class="card text-white">
+                        <img class="card-img" src="./images/about-us/su-menh.jpg" alt="Card image">
+                        <div class="card-img-overlay text-center">
+                            <h4 class="card-title mb-0 text-uppercase py-2">sứ mệnh</h4>
+                            <p>Đưa hình ảnh đất nước Việt Nam xinh đẹp, con người thân thiện, truyền thống đặc sắc đến với thế giới</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card text-white">
+                        <img class="card-img" src="./images/about-us/triet-ly-hoat-dong.jpg" alt="Card image">
+                        <div class="card-img-overlay text-center align-items-start">
+                            <h4 class="card-title mb-0 text-uppercase py-2">triết lý hoạt động</h4>
+                            <div class="row">
+                                <div class="col">
+                                    <img src="./images/about-us/customer-icon.svg" alt="" class="pt-2 pb-4">
+                                    <h6 class="mb-0 text-uppercase font-14 font-weight-bold">với khách hàng</h6>
+                                    <p>Chuyên nghiệp, hiệu quả</p>
+                                </div>
+                                <div class="col">
+                                    <img src="./images/about-us/internal.svg" alt="" class="pt-2 pb-4">
+                                    <h6 class="mb-0 text-uppercase font-14 font-weight-bold">với nội bộ</h6>
+                                    <p>Trung thực, bền vững</p>
+                                </div>
+                                <div class="col">
+                                    <img src="./images/about-us/partner.svg" alt="" class="pt-2 pb-4">
+                                    <h6 class="mb-0 text-uppercase font-14 font-weight-bold">với đối tác</h6>
+                                    <p>Hợp tác, uy tín</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card text-white">
+                        <img class="card-img h-full w-full" src="./images/about-us/tam-nhin.jpg" alt="Card image">
+                        <div class="card-img-overlay text-center align-items-start">
+                            <h4 class="card-title mb-0 text-uppercase py-2">Tầm nhìn</h4>
+                            <p>Là lựa chọn tin cậy hàng đầu của du khách với sản phẩm phong phú, chất lượng đảm bảo, chi phí hợp lý</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card text-white">
+                        <img class="card-img" src="./images/about-us/event.jpg" alt="Card image">
+                        <div class="card-img-overlay text-center d-flex align-content-center flex-wrap">
+                            <h5 class="card-title mb-0 px-5">Event Hành trình Hạnh phúc sau 1 tháng khởi động có gì ấn tượng?</h5>
+                            <div class="w-full text-center mt-4"><a href=""><button class="btn btn-read-more">Xem thêm</button></a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 d-flex align-content-between flex-wrap">
+                    <div class="card">
+                        <img class="card-img" src="./images/about-us/team2.jpg" alt="Card image">
+                    </div>
+                    <div class="card">
+                        <img class="card-img" src="./images/about-us/team2.jpg" alt="Card image">
+                    </div>
+                </div>
+                <div class="col-md-3 d-flex align-content-between flex-wrap">
+                    <div class="card">
+                        <img class="card-img" src="./images/about-us/team2.jpg" alt="Card image">
+                    </div>
+                    <div class="card">
+                        <img class="card-img" src="./images/about-us/team2.jpg" alt="Card image">
+                    </div>
+                </div>
+            </div>
+            <!-- end row 1 -->
+            <div class="row mt-4">
+                <div class="col-md-3">
+                    <div class="card">
+                        <img class="card-img" src="./images/about-us/team.jpg" alt="Card image">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img class="card-img" src="./images/about-us/team.jpg" alt="Card image">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img class="card-img" src="./images/about-us/team.jpg" alt="Card image">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img class="card-img" src="./images/about-us/team.jpg" alt="Card image">
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center mt-4">
+                <button class="btn btn-light border border-info px-4 view-all">Xem tất
+                    cả</button>
+            </div>
+        </section>
+    </main>
+    <footer class="py-5 bg-main index-footer">
+        <div class="container text-white">
+            <div class="pb-4 footer-logo"><img src="./images/home/Logo.png" alt=""></div>
+            <div class="row">
+                <div class="col-md-3">
+                    <h6 class="font-weight-bold">Công Ty Cổ Phần Dịch Vụ
+                        Truyền Thông & Du Lịch VITRIP</h6>
+                    <div class="d-flex">
+                        <span class="material-icons pr-2">
+                            location_on
+                        </span>
+                        <p>B43 Lô 6, khu đô thị mới Định Công, Phường Định Công, quận Hoàng Mai, Thành phố Hà Nội, Việt
+                            Nam.</p>
+                    </div>
+                    <div class="d-flex">
+                        <span class="material-icons pr-2">
+                            receipt_long
+                        </span>
+                        <p>Giấy phép ĐKKD
+                            Giấy phép Dịch vụ Lữ Hành Quốc tế</p>
+                    </div>
+                    <div class="d-flex">
+                        <span class="material-icons pr-2">
+                            phone_in_talk
+                        </span>
+                        <p>0914525588</p>
+                    </div>
+                    <div class="d-flex">
+                        <span class="material-icons pr-2">
+                            email
+                        </span>
+                        <p>info@vitrip.me</p>
+                    </div>
+                </div>
+                <!-- end col-1 -->
+                <div class="col-md-3">
+                    <h6 class="font-weight-bold">Dành cho khách hàng</h6>
+                    <p><a href="" class="text-white">Hướng dẫn mua hàng</a></p>
+                    <p><a href="" class="text-white">Hướng dẫn thanh toán</a></p>
+                    <p><a href="" class="text-white">Chuẩn bị trước chuyến đi</a></p>
+                    <p><a href="" class="text-white">Chính sách và điều khoản chung</a></p>
+                </div>
+                <!-- end col-2 -->
+                <div class="col-md-3">
+                    <h6 class="font-weight-bold">Kết nối với chúng tôi</h6>
+                    <div class="social-link text-center">
+                        <a href="" class="px-2"><img src="./images/home/fb-icon.svg" alt=""></a>
+                        <a href="" class="px-2"><img src="./images/home/youtube-icon.svg" alt=""></a>
+                    </div>
+                </div>
+                <!-- end col-3 -->
+                <div class="col-md-3">
+                    <h6 class="font-weight-bold">Đăng ký nhận ưu đãi từ Vitrip.me</h6>
+                    <p>Nhập email của bạn, để nhận nhiều ưu đãi, và các chương trình mới từ chúng tôi</p>
+                    <form>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email address" required>
+                        </div>
+                        <button type="submit" class="btn btn-white text-main font-weight-bold font-14 d-block ml-auto">Gửi cho
+                            tôi</button>
+                    </form>
+                </div>
+                <!-- end col-4 -->
+            </div>
+        </div>
+        <hr class="bg-white">
+        <div class="container">
+            <div class="row flex justify-content-between">
+                <div class="">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link text-white " href="#">© 2021 Vitrip.me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Quyền riêng tư</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Điều khoản</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Sơ đồ trang web</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="">
+                    <img src="./images/home/footer-language.png" class="" alt="Responsive image">
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

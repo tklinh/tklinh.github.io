@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- slide -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./src/main.css">
+    <link rel="stylesheet" href="./src/sub-page.css">
+    <link rel="stylesheet" href="./src/offcanvas.css">
+</head>
+
+<body>
+    <section class="header">
+        <nav class="navbar navbar-expand-md fixed-top navbar-light bg-light px-4">
+            <a class="navbar-brand" href="index.html"><img src="./images/dong-tay-bac/Logo.svg" alt=""></a>
+            <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav m-auto">
+                    <li class="nav-item px-2">
+                        <a class="nav-link" href="about-us.html">Về vitrip.me <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown px-2">
+                        <a class="nav-link dropdown-toggle" href="du-lich-viet-nam.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Du lịch Việt Nam
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="dong-tay-bac.html">Đông Tây Bắc</a>
+                            <a class="dropdown-item" href="bien-dao.html">Biển Đảo</a>
+                            <a class="dropdown-item" href="tay-nguyen.html">Tây Nguyên</a>
+                            <a class="dropdown-item" href="mien-tay.html">Miền Tây</a>
+                        </div>
+                    </li>
+                    <li class="nav-item  px-2">
+                        <a class="nav-link" href="mice-tour.html">Mice Tour</a>
+                    </li>
+                    <li class="nav-item  px-2">
+                        <a class="nav-link" href="tra-cuu-booking.html">Tra cứu Booking</a>
+                    </li>
+                    <li class="nav-item  px-2">
+                        <a class="nav-link" href="tin-tuc.html">Tin tức</a>
+                    </li>
+                    <li class="nav-item  px-2">
+                        <a class="nav-link" href="lien-he.html">Liên hệ</a>
+                    </li>
+                </ul>
+                <div>
+                    <img src="./images/dong-tay-bac/Language.svg" alt="">
+                    <div class="btn-login">
+                        <a href=""><img src="./images/home/line.png" alt=""></a>
+                        <a href="" type="button" data-toggle="modal" data-target=".bd-example-modal-lg"><img src="./images/home/account-circle.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="modal fade bd-example-modal-lg index-login-modal" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="row bg-white">
+                        <div class="col-md pl-0 pr-0">
+                            <img src="./images/home/login-img.jpg" alt="" class="w-full">
+                        </div>
+                        <div class="col-md p-4">
+                            <div class="text-center">
+                                <img src="./images/dong-tay-bac/Logo.svg" alt="">
+                                <h4 class="my-4">Chào mừng đến với Vitrip.me</h4>
+                                <p>Vui lòng điền thông tin đăng nhập</p>
+                            </div>
+                            <form action="" class="my-5">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Tên đăng nhập hoặc email" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Mật khẩu" required>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                        <label class="form-check-label" for="exampleCheck1">Lưu lại</label>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary bg-blue-800">Đăng nhập</button>
+                                </div>
+                            </form>
+                            <div class="text-center">
+                                <a href="#">Đổi mật khẩu |</a>
+                                <a href="#">Lấy lại mật khẩu</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="./src/offcanvas.js"></script>
+
+
+        <div class="banner-bien-dao d-flex align-items-center">
+            <div class="container">
+                <h2 class="text-white d-flex justify-content-center font-weight-bold text-center font-40 text-uppercase pb-4">tour du lịch biển đảo</h2>
+                <p class="text-white text-center">Các bãi biển đa dạng có thể chiều lòng mọi du khách, từ người yêu thích sự sôi động với các môn thể thao biển hay những người tìm kiếm nơi nghỉ dương, yêu thích sự Hoang sơ.</p>
+            </div>
+        </div>
+    </section>
+    <!-- end header -->
+    <main class="container py-5">
+        <nav aria-label="breadcrumb ">
+            <ol class="breadcrumb bg-light pl-0 mb-0">
+                <li class="breadcrumb-item"><a href="index.html">Trang chủ </a></li>
+                <li class="breadcrumb-item"><a href="bien-dao.html">Du lịch biển đảo</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Tour du lịch Hạ Long</li>
+            </ol>
+        </nav>
+        <section>
+            <section class="d-flex justify-content-between align-items-center py-2 tour-title">
+                <h4 class="text-uppercase font-weight-bold mb-0">Tour du Lịch biển đảo</h4>
+                <div class="d-flex align-items-center">
+                    <div class="btn-tour-guide">
+                        <a href="#">
+                            <i class="fas fa-download"></i>
+                            <span class="pl-2">Chương trình tour</span>
+                        </a>
+                    </div>
+                    <!-- <div class="btn-contact-tour">
+                        <a href="#">
+                            <i class="fab fa-wpforms"></i>
+                            <span class="pl-2">Liên hệ đặt tour</span>
+                        </a>
+                    </div> -->
+                </div>
+            </section>
+            <section>
+
+                <div class="container pt-4">
+                    <div class="row bg-orange p-2 text-white">Du Lịch Hạ Long – Ngủ Đêm Trên Tàu 3* – 2 Ngày 1 Đêm</div>
+                    <div class="row py-2 border-orange">
+                        <div class="col-md-4">
+                            <img src="./images/tour-ha-long/QB.png" alt="" class="w-full">
+                        </div>
+                        <div class="col-md-8">
+                            <p class="text-orange font-weight-bold"><img src="./images/tour-ha-long/metro-airplane.svg" alt=""> Khởi hành từ Hà Nội</p>
+                            <p>Lịch khởi hành: Hàng ngày</p>
+                            <p>Thời gian: 2 Ngày 1 Đêm</p>
+                            <p>Phương tiện: Ô tô + Du thuyền ngủ đêm</p>
+                            <p>Điểm thăm quan: Vịnh Hạ Long, Hang Sửng Sốt, Hang Luồn, Đảo Titop...</p>
+                            <div class="btn-contact-tour">
+                                <a href="#">
+                                    <i class="fab fa-wpforms"></i>
+                                    <span class="pl-2">Liên hệ đặt tour</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="py-4">
+                    Với hành trình 2 ngày 1 đêm, chúng tôi sẽ đưa Quý khách đến với danh thắng Vịnh Hạ Long - Một di sản thiên nhiên thế giới được UNESCO nhiều lần công nhận. Đặc biệt du khách sẽ được thưởng ngoạn và ngủ đêm trên Vịnh với du thuyền tiêu chuẩn từ 3 đến sao. Du thuyền được đóng bằng gỗ với thiết kế kiến trúc Việt Nam với cabin, ban công rộng rãi, phòng tắm riêng, sàn gỗ lớn, phòng ăn sang trọng...
+                </div>
+
+
+                <div id="carouselImpressIndicators" class="carousel slide mt-4" data-ride="carousel" data-interval="false">
+                    <ul class="story-tabs mb-0">
+                        <li data-target="#carouselImpressIndicators" data-slide-to="0" class="active">Lịch trình tour</li>
+                        <li data-target="#carouselImpressIndicators" data-slide-to="1">Ảnh hành trình</li>
+                        <li data-target="#carouselImpressIndicators" data-slide-to="2">Giá bao gồm</li>
+                        <li data-target="#carouselImpressIndicators" data-slide-to="3">Giá không bao gồm</li>
+                    </ul>
+                    <div class="carousel-inner an-tuong-carousel">
+                        <!-- Lịch trình tour -->
+                        <div class="carousel-item py-4 active">
+                            <h3>LỊCH TRÌNH TOUR</h3>
+                            <p>NGÀY 01: HÀ NỘI – HẠ LONG - HANG SỬNG SỐT ( Ăn bữa: Trưa + Tối )</p>
+                            <p>
+                                Sáng: 08h15 Xe ôtô và Hướng dẫn viên của Công ty đón quý khách tại Nhà Hát Lớn, hoặc các điểm hẹn trong khu vực phố cổ, sau đó khởi hành đi Hạ Long, trên đường đi đoàn nghỉ dừng chân ở Hải Dương, tại đây bạn có thể mua sắm các sản vật địa phương hoặc đồ dùng cá nhân cho chuyến đi. (Chi phí tự túc). <br>
+                                11h30 Đến bến du thuyền tại Đảo Tuần Châu. Hướng dẫn viên đưa Quý khách làm thủ tục lên du thuyền, nhận phòng và bắt đầu với hành trình ngủ đêm trên du thuyền Hạ Long. <br>
+                                12h30 quý khách dùng bữa trưa tại nhà hàng với những món ăn được chế biến từ những nguyên liệu tươi ngon nhất và cảm nhận cảm giác vừa thưởng thức bữa trưa vừa thưởng ngoạn những cảnh đẹp trên Vịnh Hạ Long như: dãy núi Bài Thơ, Đỉnh Lư Hương, Hòn Gà Chọi và muôn nghìn hòn đảo đá tại khu vực Vịnh Hạ Long.
+                            </p>
+                            <p>
+                                Chiều: Sau bữa trưa, quý khách về phòng nghỉ ngơi sau đó tiếp tục hành trình khám phá Vịnh Hạ Long tại một số thắng cảnh nổi tiếng như: Hang Sửng Sốt – Một trong những hang động lớn nhất và đẹp nhất của Vịnh Hạ Long. (Quý khách sẽ thăm hang khoảng 45 phút). Sau đó thuyền đưa đoàn sang khu vực Hang Luồn – hang xuyên thủy lớn nhất ở Hạ Long, đoàn tự do chèo thuyền Kayak khám phá Hạ Long theo cách riêng của mình... 17h00 đoàn về lại du thuyền để khởi hành đến khu vực nghỉ đêm. 18h00 quý khách tự do nghỉ ngơi và dùng bữa tối tại nhà hàng trên du thuyền. Sau bữa tối, đoàn tự do nghỉ ngơi hoặc tham gia các hoạt động như: tham gia câu mực đêm, xem phim hoặc hát karaoke trên du thuyền (Nghỉ đêm trên du thuyền )
+                            </p>
+                            <p>NGÀY 02: HẠ LONG - ĐẢO TITOP - HÀ NỘI ( Ăn bữa: Sáng + Trưa )</p>
+                            <p>
+                                Sáng: Quý khách dậy sớm, ngắm cảnh bình minh trên Vịnh Hạ Long và lưu lại cho mình khoảnh khắc tuyệt đẹp này... 07h00 Đoàn dùng bữa điểm tâm sáng tại nhà hàng của Du thuyền. 9h00: Thuyền tiếp tục đưa quý khách đến đảo Titop, quý khách tự do tắm biển thư giãn hoặc chinh phục đỉnh Titop – nơi quý khách có thể dành hàng giờ để ngắm cảnh Hạ Long toàn cảnh từ trên cao và lưu cho mình những bức hình tuyệt đẹp về Hạ Long – Một kỳ quan dựng giữ đất trời... 10h30 đoàn trở lại Du thuyền và chuẩn bị hành lý – 11h00 Du thuyền đưa đoàn về bến Du thuyền Bãi Cháy. Trên đường đi đoàn tự do nghỉ ngơi và ngắm cảnh đẹp trên vịnh một lần nữa. 11h30 Du thuyền cập bến, ôtô và hướng dẫn đưa đoàn về nhà hàng tại khu vực Bãi Cháy, dùng bữa trưa tại nhà hàng với những món ăn được chế biến từ hải sản tươi sống của vịnh Hạ Long.
+                            </p>
+                            <p>
+                                Chiều: 13h30 Đoàn lên xe và khởi hành về Hà Nội, trên đường về đoàn nghỉ dừng chân tại Sao Đỏ - Hải Dương, đoàn tự do mua sắm những sản vật địa phương về làm quà cho người thân và bạn bè…. Sau đó đoàn lên Ôtô khởi hành về điểm hẹn ban đầu. Kết thúc chương trình và hẹn gặp lại quý khách.
+                            </p>
+                        </div>
+                        <!-- Ảnh hành trình -->
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-sm">
+                                    <div class="card text-white">
+                                        <img class="card-img" src="./images/tour-ha-long/hinh-anh-du-lich-ha-long.jpg" alt="Card image">
+                                    </div>
+                                </div>
+                                <div class="col-sm">
+                                    <div class="card text-white">
+                                        <img class="card-img" src="./images/tour-ha-long/hinh-anh-du-lich-ha-long.jpg" alt="Card image">
+                                    </div>
+                                </div>
+                                <div class="col-sm">
+                                    <div class="card text-white">
+                                        <img class="card-img" src="./images/tour-ha-long/hinh-anh-du-lich-ha-long.jpg" alt="Card image">
+                                    </div>
+                                </div>
+                                <div class="col-sm">
+                                    <div class="card text-white">
+                                        <img class="card-img" src="./images/tour-ha-long/hinh-anh-du-lich-ha-long.jpg" alt="Card image">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm">
+                                    <div class="card text-white">
+                                        <img class="card-img" src="./images/tour-ha-long/hinh-anh-du-lich-ha-long.jpg" alt="Card image">
+                                    </div>
+                                </div>
+                                <div class="col-sm">
+                                    <div class="card text-white">
+                                        <img class="card-img" src="./images/tour-ha-long/hinh-anh-du-lich-ha-long.jpg" alt="Card image">
+                                    </div>
+                                </div>
+                                <div class="col-sm">
+                                    <div class="card text-white">
+                                        <img class="card-img" src="./images/tour-ha-long/hinh-anh-du-lich-ha-long.jpg" alt="Card image">
+                                    </div>
+                                </div>
+                                <div class="col-sm">
+                                    <div class="card text-white">
+                                        <img class="card-img" src="./images/tour-ha-long/hinh-anh-du-lich-ha-long.jpg" alt="Card image">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm">
+                                    <div class="card text-white">
+                                        <img class="card-img" src="./images/tour-ha-long/hinh-anh-du-lich-ha-long.jpg" alt="Card image">
+                                    </div>
+                                </div>
+                                <div class="col-sm">
+                                    <div class="card text-white">
+                                        <img class="card-img" src="./images/tour-ha-long/hinh-anh-du-lich-ha-long.jpg" alt="Card image">
+                                    </div>
+                                </div>
+                                <div class="col-sm">
+                                    <div class="card text-white">
+                                        <img class="card-img" src="./images/tour-ha-long/hinh-anh-du-lich-ha-long.jpg" alt="Card image">
+                                    </div>
+                                </div>
+                                <div class="col-sm">
+                                    <div class="card text-white">
+                                        <img class="card-img" src="./images/tour-ha-long/hinh-anh-du-lich-ha-long.jpg" alt="Card image">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm">
+                                    <div class="card text-white">
+                                        <img class="card-img" src="./images/tour-ha-long/hinh-anh-du-lich-ha-long.jpg" alt="Card image">
+                                    </div>
+                                </div>
+                                <div class="col-sm">
+                                    <div class="card text-white">
+                                        <img class="card-img" src="./images/tour-ha-long/hinh-anh-du-lich-ha-long.jpg" alt="Card image">
+                                    </div>
+                                </div>
+                                <div class="col-sm">
+                                    <div class="card text-white">
+                                        <img class="card-img" src="./images/tour-ha-long/hinh-anh-du-lich-ha-long.jpg" alt="Card image">
+                                    </div>
+                                </div>
+                                <div class="col-sm">
+                                    <div class="card text-white">
+                                        <img class="card-img" src="./images/tour-ha-long/hinh-anh-du-lich-ha-long.jpg" alt="Card image">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- giá bao gồm -->
+                        <div class="carousel-item">
+                            <div class="py-4">
+                                <p><i class="fas fa-check text-main"></i> Xe ôtô máy lạnh hạng sang đưa đón theo hành trình</p>
+                                <p><i class="fas fa-check text-main"></i> 01 đêm nghỉ tại du thuyền trên vịnh ( 02 người/01 phòng )</p>
+                                <p><i class="fas fa-check text-main"></i> 03 bữa ăn chính trên du thuyền ( mức ăn tùy từng du thuyền, thấp nhất 120.000 VNĐ/01 khách )</p>
+                                <p><i class="fas fa-check text-main"></i> Du thuyền hạng sang thăm quan vịnh Hạ Long theo hành trình.</p>
+                                <p><i class="fas fa-check text-main"></i> Vé thắng cảnh tại Hạ Long ( hành trình 04 tiếng )</p>
+                                <p><i class="fas fa-check text-main"></i> Hướng dẫn viên kinh nghiệm, nhiệt tình chu đáo phục vụ đoàn theo hành trình</p>
+                                <p><i class="fas fa-check text-main"></i> Bảo hiểm du lịch toàn tuyến mức đền bù tối đa: 10.000.000 VNĐ/01 vụ</p>
+                                <p><i class="fas fa-check text-main"></i> 01 chai nước/01ngày/01 khách.</p>
+                            </div>
+
+                        </div>
+
+
+                        <!-- giá không bao gồm -->
+                        <div class="carousel-item">
+                            <div class="py-4">
+                                <p><i class="far fa-window-close text-danger"></i></i> Xe ôtô máy lạnh hạng sang đưa đón theo hành trình</p>
+                                <p><i class="far fa-window-close text-danger"></i></i> 01 đêm nghỉ tại du thuyền trên vịnh ( 02 người/01 phòng )</p>
+                                <p><i class="far fa-window-close text-danger"></i></i> 03 bữa ăn chính trên du thuyền ( mức ăn tùy từng du thuyền, thấp nhất 120.000 VNĐ/01 khách )</p>
+                                <p><i class="far fa-window-close text-danger"></i></i> Du thuyền hạng sang thăm quan vịnh Hạ Long theo hành trình.</p>
+                                <p><i class="far fa-window-close text-danger"></i></i> Vé thắng cảnh tại Hạ Long ( hành trình 04 tiếng )</p>
+                                <p><i class="far fa-window-close text-danger"></i></i> Hướng dẫn viên kinh nghiệm, nhiệt tình chu đáo phục vụ đoàn theo hành trình</p>
+                                <p><i class="far fa-window-close text-danger"></i></i> Bảo hiểm du lịch toàn tuyến mức đền bù tối đa: 10.000.000 VNĐ/01 vụ</p>
+                                <p><i class="far fa-window-close text-danger"></i></i> 01 chai nước/01ngày/01 khách.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="suggestions">
+                <div class="mt-5">
+                    <h4 class="text-uppercase font-weight-bold mb-0">Có thể bạn quan tâm</h4>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="row">
+                                        <div class="col-sm">
+                                            <div class="card text-white">
+                                                <img class="card-img" src="./images/tay-nguyen/thac-ban-gioc.jpg" alt="Card image">
+                                                <div class="card-img-overlay">
+                                                    <h5 class="card-title">Cao Bằng – Thác Bản Giốc</h5>
+                                                    <div><a href=""><button class="btn btn-read-more">Xem thêm</button></a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm">
+                                            <div class="card text-white">
+                                                <img class="card-img" src="./images/tay-nguyen/thac-ban-gioc.jpg" alt="Card image">
+                                                <div class="card-img-overlay">
+                                                    <h5 class="card-title">Cao Bằng – Thác Bản Giốc</h5>
+                                                    <div><a href=""><button class="btn btn-read-more">Xem thêm</button></a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm">
+                                            <div class="card text-white">
+                                                <img class="card-img" src="./images/tay-nguyen/thac-ban-gioc.jpg" alt="Card image">
+                                                <div class="card-img-overlay">
+                                                    <h5 class="card-title">Cao Bằng – Thác Bản Giốc</h5>
+                                                    <div><a href=""><button class="btn btn-read-more">Xem thêm</button></a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--  -->
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-sm">
+                                            <div class="card text-white">
+                                                <img class="card-img" src="./images/tay-nguyen/thac-ban-gioc.jpg" alt="Card image">
+                                                <div class="card-img-overlay">
+                                                    <h5 class="card-title">Cao Bằng – Thác Bản Giốc</h5>
+                                                    <div><a href=""><button class="btn btn-read-more">Xem thêm</button></a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm">
+                                            <div class="card text-white">
+                                                <img class="card-img" src="./images/tay-nguyen/thac-ban-gioc.jpg" alt="Card image">
+                                                <div class="card-img-overlay">
+                                                    <h5 class="card-title">Cao Bằng – Thác Bản Giốc</h5>
+                                                    <div><a href=""><button class="btn btn-read-more">Xem thêm</button></a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm">
+                                            <div class="card text-white">
+                                                <img class="card-img" src="./images/tay-nguyen/thac-ban-gioc.jpg" alt="Card image">
+                                                <div class="card-img-overlay">
+                                                    <h5 class="card-title">Cao Bằng – Thác Bản Giốc</h5>
+                                                    <div><a href=""><button class="btn btn-read-more">Xem thêm</button></a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+    <footer class="py-5 bg-main index-footer">
+        <div class="container text-white">
+            <div class="pb-4 footer-logo"><img src="./images/home/Logo.png" alt=""></div>
+            <div class="row">
+                <div class="col-md-3">
+                    <h6 class="font-weight-bold">Công Ty Cổ Phần Dịch Vụ
+                        Truyền Thông & Du Lịch VITRIP</h6>
+                    <div class="d-flex">
+                        <span class="material-icons pr-2">
+                            location_on
+                        </span>
+                        <p>B43 Lô 6, khu đô thị mới Định Công, Phường Định Công, quận Hoàng Mai, Thành phố Hà Nội, Việt
+                            Nam.</p>
+                    </div>
+                    <div class="d-flex">
+                        <span class="material-icons pr-2">
+                            receipt_long
+                        </span>
+                        <p>Giấy phép ĐKKD
+                            Giấy phép Dịch vụ Lữ Hành Quốc tế</p>
+                    </div>
+                    <div class="d-flex">
+                        <span class="material-icons pr-2">
+                            phone_in_talk
+                        </span>
+                        <p>0914525588</p>
+                    </div>
+                    <div class="d-flex">
+                        <span class="material-icons pr-2">
+                            email
+                        </span>
+                        <p>info@vitrip.me</p>
+                    </div>
+                </div>
+                <!-- end col-1 -->
+                <div class="col-md-3">
+                    <h6 class="font-weight-bold">Dành cho khách hàng</h6>
+                    <p><a href="" class="text-white">Hướng dẫn mua hàng</a></p>
+                    <p><a href="" class="text-white">Hướng dẫn thanh toán</a></p>
+                    <p><a href="" class="text-white">Chuẩn bị trước chuyến đi</a></p>
+                    <p><a href="" class="text-white">Chính sách và điều khoản chung</a></p>
+                </div>
+                <!-- end col-2 -->
+                <div class="col-md-3">
+                    <h6 class="font-weight-bold">Kết nối với chúng tôi</h6>
+                    <div class="social-link text-center">
+                        <a href="" class="px-2"><img src="./images/home/fb-icon.svg" alt=""></a>
+                        <a href="" class="px-2"><img src="./images/home/youtube-icon.svg" alt=""></a>
+                    </div>
+                </div>
+                <!-- end col-3 -->
+                <div class="col-md-3">
+                    <h6 class="font-weight-bold">Đăng ký nhận ưu đãi từ Vitrip.me</h6>
+                    <p>Nhập email của bạn, để nhận nhiều ưu đãi, và các chương trình mới từ chúng tôi</p>
+                    <form>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email address" required>
+                        </div>
+                        <button type="submit" class="btn btn-white text-main font-weight-bold font-14 d-block ml-auto">Gửi cho
+                            tôi</button>
+                    </form>
+                </div>
+                <!-- end col-4 -->
+            </div>
+        </div>
+        <hr class="bg-white">
+        <div class="container">
+            <div class="row flex justify-content-between">
+                <div class="">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link text-white " href="#">© 2021 Vitrip.me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Quyền riêng tư</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Điều khoản</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Sơ đồ trang web</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="">
+                    <img src="./images/home/footer-language.png" class="" alt="Responsive image">
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
