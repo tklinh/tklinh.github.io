@@ -43,7 +43,9 @@
     background: url(../images/tra-cuu-booking/banner.jpg) no-repeat;
     height: 650px;
 }
-
+.sub-banner{
+    max-height: 486px;
+}
 /* ----------------- cung duong dong tay bac ----------------- */
 .btn-tour-guide, .btn-contact-tour{
     width: 14rem;
