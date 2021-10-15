@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- slide -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./src/main.css">
+    <link rel="stylesheet" href="./src/sub-page.css">
+    <link rel="stylesheet" href="./src/offcanvas.css">
+</head>
+
+<body>
+    <section class="header">
+        <nav class="navbar navbar-expand-md fixed-top navbar-light bg-light px-4">
+            <a class="navbar-brand" href="index.html"><img src="./images/dong-tay-bac/Logo.svg" alt=""></a>
+            <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav m-auto">
+                    <li class="nav-item px-2">
+                        <a class="nav-link" href="about-us.html">Về vitrip.me <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown px-2">
+                        <a class="nav-link dropdown-toggle" href="du-lich-viet-nam.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Du lịch Việt Nam
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="dong-tay-bac.html">Đông Tây Bắc</a>
+                            <a class="dropdown-item" href="bien-dao.html">Biển Đảo</a>
+                            <a class="dropdown-item" href="tay-nguyen.html">Tây Nguyên</a>
+                            <a class="dropdown-item" href="mien-tay.html">Miền Tây</a>
+                        </div>
+                    </li>
+                    <li class="nav-item  px-2">
+                        <a class="nav-link" href="mice-tour.html">Mice Tour</a>
+                    </li>
+                    <li class="nav-item  px-2">
+                        <a class="nav-link" href="tra-cuu-booking.html">Tra cứu Booking</a>
+                    </li>
+                    <li class="nav-item  px-2">
+                        <a class="nav-link" href="tin-tuc.html">Tin tức</a>
+                    </li>
+                    <li class="nav-item  px-2">
+                        <a class="nav-link" href="lien-he.html">Liên hệ</a>
+                    </li>
+                </ul>
+                <div>
+                    <img src="./images/dong-tay-bac/Language.svg" alt="">
+                    <div class="btn-login">
+                        <a href=""><img src="./images/home/line.png" alt=""></a>
+                        <a href="" type="button" data-toggle="modal" data-target=".bd-example-modal-lg"><img src="./images/home/account-circle.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="modal fade bd-example-modal-lg index-login-modal" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="row bg-white">
+                        <div class="col-md pl-0 pr-0">
+                            <img src="./images/home/login-img.jpg" alt="" class="w-full">
+                        </div>
+                        <div class="col-md p-4">
+                            <div class="text-center">
+                                <img src="./images/dong-tay-bac/Logo.svg" alt="">
+                                <h4 class="my-4">Chào mừng đến với Vitrip.me</h4>
+                                <p>Vui lòng điền thông tin đăng nhập</p>
+                            </div>
+                            <form action="" class="my-5">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Tên đăng nhập hoặc email" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Mật khẩu" required>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                        <label class="form-check-label" for="exampleCheck1">Lưu lại</label>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary bg-blue-800">Đăng nhập</button>
+                                </div>
+                            </form>
+                            <div class="text-center">
+                                <a href="#">Đổi mật khẩu |</a>
+                                <a href="#">Lấy lại mật khẩu</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="./src/offcanvas.js"></script>
+
+
+        <div class="banner-lien-he d-flex align-items-center">
+            <div class="container">
+                <h2 class="text-white d-flex justify-content-center font-weight-bold text-center font-40 text-uppercase pb-4">Chính sách và điều khoản</h2>
+            </div>
+        </div>
+    </section>
+    <!-- end header -->
+    <main class="container py-5">
+        <nav aria-label="breadcrumb ">
+            <ol class="breadcrumb bg-light pl-0 mb-0">
+                <li class="breadcrumb-item"><a href="index.html">Trang chủ </a></li>
+                <li class="breadcrumb-item active" aria-current="page">Chính sách và điều khoản</li>
+            </ol>
+        </nav>
+        <section class="contact-content">
+            <h6 style="font-weight: bold;">CHÍNH SÁCH HOÀN HỦY TOUR</h6>
+            <h6 style="font-weight: bold;">1. Trường hợp bị hủy bỏ do Vitrip.Me:</h6>
+            <p>
+                Nếu Vitrip.Me không thực hiện được chuyến du lịch, công ty phải báo ngay cho khách hàng biết và thanh toán lại cho khách hàng toàn bộ số tiền khách hàng đã đóng trong vòng 3 ngày kể từ lúc việc thông báo hủy chuyến du lịch bằng tiền mặt hoặc chuyển khoản.
+            </p>
+            <h6 style="font-weight: bold;">2. Trường hợp bị hủy bỏ do khách hàng:</h6>
+            <ul>
+                <li>
+                    Trường hợp hủy chuyến du lịch ngay sau khi đăng ký đến 10 ngày trước ngày khởi hành, Quý khách sẽ chịu phạt 30% trên giá vé du lịch. 
+                </li>
+                <li>
+                    Trường hợp hủy chuyến du lịch trong vòng từ 5 – 10 ngày trước ngày khởi hành, Quý khách sẽ chịu phí 50% trên giá vé du lịch.
+                </li>
+                <li>
+                    Trường hợp hủy chuyến du lịch trong vòng từ 3 – 5 ngày trước ngày khởi hành, Quý khách sẽ chịu phí 75% trên giá vé du lịch.
+                </li>
+                <li>
+                    Quý khách hủy chuyến du lịch trong vòng từ 0 – 3 ngày trước ngày khởi hành, Quý khách sẽ chịu phí 100% trên giá vé du lịch.
+                </li>
+            </ul>
+            <h6 style="font-weight: bold;">Lưu ý:</h6>
+            <ul>
+                <li>
+                    Trường hợp hủy tour do sự cố khách quan như thiên tai, dịch bệnh, hoãn và hủy chuyến của các phương tiện vận chuyển công cộng… Vitrip.Me sẽ không chịu trách nhiệm bồi thường thêm bất kỳ chi phí nào ngoài việc hoàn trả tiền tour.
+                </li>
+                <li>
+                    Trên đây là mức phạt hủy tối đa, chi phí này có thể được giảm tùy theo điều kiện của từng nhà cung cấp dịch vụ cho Vitrip.Me. 
+                </li>
+                <li>
+                    Thời gian hủy chuyến du lịch được tính cho ngày làm việc, không tính thứ 7, Chủ Nhật và các ngày Lễ, Tết.
+                </li>
+            </ul>
+            <h6 style="font-weight: bold;">QUY ĐỊNH VỀ “SPAM”</h6>
+            <p>
+                Vitrip.Me thực sự quan ngại đến vấn nạn Spam (thư rác), các Email giả mạo danh tín chúng tôi gởi đi. Do đó, công ty khẳng định chỉ gửi Email đến bạn khi và chỉ khi bạn có đăng ký hoặc sử dụng dịch vụ từ hệ thống của chúng tôi. Vitrip.Me cam kết không bán, thuê lại hoặc cho thuê email của bạn từ bên thứ ba. Nếu bạn vô tình nhận được Email không theo yêu cầu từ hệ thống chúng tôi do một nguyên nhân ngoài ý muốn, xin vui lòng nhấn vào link từ chối nhận Email này kèm theo, hoặc thông báo trực tiếp đến ban quản trị Website.
+            </p>
+            <h6 style="font-weight: bold;">CHÍNH SÁCH VÀ ĐIỀU KHOẢN CHUNG</h6>
+            <p>
+                Trang web này được điều hành bởi Vitrip.Me. Xin vui lòng đọc kỹ các Điều kiện & Điều khoản trước khi sử dụng hoặc đăng ký trên trang web này. Bạn phải hoàn toàn đồng ý với các điều kiện và điều khoản này nếu muốn sử dụng trang web. Lưu ý rằng trang web này được xây dựng nhằm phục vụ truy cập trên phạm vi toàn cầu đối với người sử dụng. Những thông tin và mức giá trên trang web này được áp dụng cho người sử dụng trên phạm vi toàn cầu. Chúng tôi có quyền từ chối truy cập vào trang web này bất cứ lúc nào mà không cần phải thông báo trước.
+            </p>
+            <h6 style="font-weight: bold;">NGHĨA VỤ CỦA NGƯỜI SỬ DỤNG TRANG WEB</h6>
+            <p>
+                Khi sử dụng trang web này, xin vui lòng đồng ý rằng: 
+            </p>
+            <ul>
+                <li>
+                    Bạn chấp nhận trách nhiệm về tài chính đối với toàn bộ các giao dịch được thực hiện theo tên và tài khoản của bạn. 
+                </li>
+                <li>
+                    Để có năng lực pháp lý, bạn phải từ 18 tuổi trở lên.
+                </li>
+                <li>
+                    Bạn bảo đảm rằng mọi thông tin mà bạn cung cấp về chính bạn và về bất cứ ai khác là hoàn toàn chính xác. 
+                </li>
+                <li>
+                    Không được sử dụng trang web này để thực hiện hành vi đăng ký sai trái, gian lận. 
+                </li>
+                <li>
+                    Nghiêm cấm mọi hành vi phát tán tài liệu mang tính đe dọa, phỉ báng,khiêu dâm, chính trị hoặc phân biệt chủng tộc hoặc bất kỳ tài liệu bất hợp pháp hoặc khiêu khích nào khác thông qua trang web này. 
+                </li>
+                <li>
+                    Bạn không được sửa đổi, sao chép, truyền tải, phân phối, bán, phát tán, hoặc cấp phép trang web này và bất kỳ phần nội dung nào của nó dưới bất kỳ hình thức nào trừ trường hợp bạn sao chép thông tin từ trang web này để sử dụng cho cá nhân bạn và mang tính phi thương mại.
+                </li>
+            </ul>
+            <h6 style="font-weight: bold;">CÁC ĐIỀU KIỆN ĐĂNG KÝ</h6>
+            <p>
+                Khi thực hiện đăng ký qua trang web của chúng tôi, xin vui lòng thực hiện mối quan hệ theo hợp đồng trực tiếp (ràng buộc pháp lý) với chúng tôi. Các điều kiện đăng ký bao gồm những giới hạn và những loại trừ về trách nhiệm pháp lý, và phí hủy và thay đổi phải thanh toán nếu việc đăng ký bị hủy hoặc thay đổi sau khi đã được xác nhận. Chúng tôi đề xuất rằng bạn nên đọc kỹ các điều kiện đăng ký được áp dụng khi thực hiện đăng ký. Các điều kiện đăng ký bao gồm những giới hạn và những loại trừ về trách nhiệm pháp lý, và phí hủy cũng như thay đổi phải thanh toán nếu việc đăng ký bị hủy hoặc thay đổi sau khi đã được xác nhận.
+            </p>
+            <h6 style="font-weight: bold;">GIÁ TOUR</h6>
+            <p>
+                Toàn bộ các mức giá tour được thực hiện bằng Việt Nam Đồng (VND). Các khoản thanh toán bằng ngoại tệ khác sẽ được quy đổi ra Việt Nam Đồng (VND) theo tỷ giá hối đoái hiện hành. Các mức giá bao gồm các hạng mục được liệt kê trong phần “Bao gồm” Chúng tôi giảm giá từ 25% – 50% đối với trẻ em và miễn phí đối với trẻ còn ẵm ngửa Những thông tin và mức giá trên trang web này không mang tính ‘trực tiếp’ và đôi lúc được cập nhật. Mọi sự nỗ lực được thực hiện nhằm bảo đảm sự chính xác về thông tin và các mức giá, nhưng đáng tiếc là đôi khi vẫn xảy ra lỗi. Trong trường hợp một mức giá không chính xác do lỗi hệ thống, chúng tôi không chịu sự ràng buộc bởi mức giá đó.
+            </p>
+            <h6 style="font-weight: bold;">THANH TOÁN</h6>
+            <p>
+                Toàn bộ các tour hoặc dịch vụ cần phải được thanh toán trước trừ phi có quy định khác. Chúng tôi chấp nhận thanh toán bằng thẻ Visa, ATM Nội địa Vitrip.Me sẽ không thu thập thông tin chi tiết thẻ tín dụng của bạn. Những thông tin mà bạn cung cấp sẽ được bảo đảm an toàn tuyệt đối trong hệ thống kỹ thuật theo tiêu chuẩn an ninh công nghệ toàn cầu (SSL) của MasterCard và Ngân hàng ngoại thương Việt Nam (Vietcombank), Ngân hàng đầu tư và phát triển Việt Nam (BIDV) khi bạn tiến hành thanh toán bằng thẻ tín dụng.
+            </p>
+            <h6 style="font-weight: bold;">
+                CẤP PHIẾU XÁC NHẬN/ PHIẾU THANH TOÁN
+            </h6>
+            <p>
+                Sau khi thanh toán, Vitrip.Me sẽ gửi xác nhận/phiếu thanh toán qua email; phiếu này phải được in ra như là bằng chứng cùa việc mua bán, và sẽ được xuất trình cho Nhà cung cấp dịch vụ. Tất cả thông tin về du khách cần phải được cung cấp một cách chính xác tại thời điểm đăng ký. Mọi yêu cầu sửa đổi/bổ sung cần phài được gửi qua email đến Vitrip.Me. Công ty không chịu trách nhiệm về bất cứ vấn đề gì có thể xảy ra nếu bạn không nhận hoặc đọc kỹ xác nhận/phiếu thanh toán của bạn. Trong trường hợp bạn chưa nhận được phiếu thanh toán, bạn cần phải thông báo cho Vitrip.Me ít nhất 72 giờ trước ngày cung cấp dịch vụ ấn định.
+            </p>
+            <h6 style="font-weight: bold;">QUY TRÌNH HỦY DỊCH VỤ VÀ HOÀN TRẢ</h6>
+            <p>
+                Việc hủy toàn bộ các dịch vụ bởi người tham gia tour phải được gửi và nhận bằng văn bản: email, fax hoặc tới văn phòng Vitrip.Me giao dịch trực tiếp. Công ty không chịu trách nhiệm về mọi yêu cầu hủy dịch vụ chưa nhận được và chưa xác nhận lại với bạn. Trong trường hợp này, sẽ áp dụng phí hủy dịch vụ hoặc bỏ tour.
+            </p>
+            <h6 style="font-weight: bold;">KHIẾU NẠI VÀ ĐÒI BỒI THƯỜNG</h6>
+            <p>
+                Nếu khách hàng có khiếu nại đến Vitrip.Me, trước hết khách hàng phải thông báo cho trưởng đoàn càng sớm càng tốt để khắc phục vấn đề khiếu nại đó. Nếu không hài lòng, khách hàng có thể liên hệ với đại diện (bán hàng) của công ty trong khi đi tour để công ty có cơ hội khắc phục vấn đề đó. 
+            </p>
+            <p>
+                Nếu vẫn chưa hài lòng qua các kênh đó trong chuyến đi thì khách hàng cần gửi mọi vấn đề khiếu nại trực tiếp đến info@vitrip.me trong vòng 30 ngày kể từ ngày kết thúc chuyến đi. Công ty sẽ không nhận mọi trách nhiệm đối với những khiếu nại nhận được sau thời hạn này.
+            </p>
+            <h6 style="font-weight: bold;">QUAN HỆ THƯ TỪ</h6>
+            <p>
+                Khi hoàn thành một đăng ký, bạn đồng ý nhận email mà chúng tôi có thể gửi đến bạn, cung cấp cho bạn những thông tin về điểm đến và những thông tin cụ thể liên quan đến đăng ký và các điểm đến của bạn, và chúng tôi có thể gửi email mời bạn điền vào mẫu đánh giá của khách hàng.
+            </p>
+            <h6 style="font-weight: bold;">NHỮNG THAY ĐỔI</h6>
+            <p>
+                Vitrip.Me có thể thay đổi bất kỳ phương diện nào của trang web này hoặc nội dung của nó, bao gồm những điểm đặc trưng, những thông tin hoặc nội dung khác vào bất cứ lúc nào mà không cần phải đưa ra thông báo trước.
+            </p>
+        </section>
+    </main>
+    <footer class="py-5 bg-main index-footer">
+        <div class="container text-white">
+            <div class="pb-4 footer-logo"><img src="./images/home/Logo.png" alt=""></div>
+            <div class="row">
+                <div class="col-md-3">
+                    <h6 class="font-weight-bold">Công Ty Cổ Phần Dịch Vụ
+                        Truyền Thông & Du Lịch VITRIP</h6>
+                    <div class="d-flex">
+                        <span class="material-icons pr-2">
+                            location_on
+                        </span>
+                        <p>B43 Lô 6, khu đô thị mới Định Công, Phường Định Công, quận Hoàng Mai, Thành phố Hà Nội, Việt
+                            Nam.</p>
+                    </div>
+                    <div class="d-flex">
+                        <span class="material-icons pr-2">
+                            receipt_long
+                        </span>
+                        <p>Giấy phép ĐKKD
+                            Giấy phép Dịch vụ Lữ Hành Quốc tế</p>
+                    </div>
+                    <div class="d-flex">
+                        <span class="material-icons pr-2">
+                            phone_in_talk
+                        </span>
+                        <p>0914525588</p>
+                    </div>
+                    <div class="d-flex">
+                        <span class="material-icons pr-2">
+                            email
+                        </span>
+                        <p>info@vitrip.me</p>
+                    </div>
+                </div>
+                <!-- end col-1 -->
+                <div class="col-md-3">
+                    <h6 class="font-weight-bold">Dành cho khách hàng</h6>
+                    <p><a href="huong-dan-thanh-toan.html" class="text-white">Hướng dẫn thanh toán</a></p>
+                    <p><a href="ban-quyen-hinh-anh.html" class="text-white">Bản quyền hình ảnh</a></p>
+                    <p><a href="chuan-bi-truoc-chuyen-di.html" class="text-white">Chuẩn bị trước chuyến đi</a></p>
+                    <p><a href="chinh-sach-dieu-khoan.html" class="text-white">Chính sách và điều khoản chung</a></p>
+                </div>
+                <!-- end col-2 -->
+                <div class="col-md-3">
+                    <h6 class="font-weight-bold">Kết nối với chúng tôi</h6>
+                    <div class="social-link text-center">
+                        <a href="" class="px-2"><img src="./images/home/fb-icon.svg" alt=""></a>
+                        <a href="" class="px-2"><img src="./images/home/youtube-icon.svg" alt=""></a>
+                    </div>
+                </div>
+                <!-- end col-3 -->
+                <div class="col-md-3">
+                    <h6 class="font-weight-bold">Đăng ký nhận ưu đãi từ Vitrip.me</h6>
+                    <p>Nhập email của bạn, để nhận nhiều ưu đãi, và các chương trình mới từ chúng tôi</p>
+                    <form>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email address" required>
+                        </div>
+                        <button type="submit" class="btn btn-white text-main font-weight-bold font-14 d-block ml-auto">Gửi cho
+                            tôi</button>
+                    </form>
+                </div>
+                <!-- end col-4 -->
+            </div>
+        </div>
+        <hr class="bg-white">
+        <div class="container">
+            <div class="row flex justify-content-between">
+                <div class="">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link text-white " href="#">© 2021 Vitrip.me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Quyền riêng tư</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Điều khoản</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Sơ đồ trang web</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="">
+                    <img src="./images/home/footer-language.png" class="" alt="Responsive image">
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
